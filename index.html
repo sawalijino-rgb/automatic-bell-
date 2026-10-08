@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Automatic Bell System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="bell-icon">🔔</div>
+
+        <h1>Automatic Bell System</h1>
+
+        <p>ESP32 School Bell Controller</p>
+    </header>
+
+
+    <section class="card">
+
+        <h2>System Status</h2>
+
+        <div id="connectionStatus"
+             class="status disconnected">
+            ESP32 Disconnected
+        </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Current Subject</h2>
+
+        <div id="currentSubject"
+             class="subject">
+            Subject 1
+        </div>
+
+        <div class="timer"
+             id="timer">
+            01:00:00
+        </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Manual Control</h2>
+
+        <button class="btn normal"
+                onclick="ringBell()">
+            🔔 Ring Bell
+        </button>
+
+        <button class="btn stop"
+                onclick="stopBell()">
+            ⛔ Stop
+        </button>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Emergency Alarm</h2>
+
+        <button class="btn earthquake"
+                onclick="earthquakeAlarm()">
+            🌎 Earthquake Alarm
+        </button>
+
+        <button class="btn fire"
+                onclick="fireAlarm()">
+            🔥 Fire Alarm
+        </button>
+
+        <button class="btn stop"
+                onclick="stopAlarm()">
+            ⛔ Stop Alarm
+        </button>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>8 Subjects</h2>
+
+        <div id="subjectList">
+
+            <div class="subject-item active">
+                1. Subject 1
+            </div>
+
+            <div class="subject-item">
+                2. Subject 2
+            </div>
+
+            <div class="subject-item">
+                3. Subject 3
+            </div>
+
+            <div class="subject-item">
+                4. Subject 4
+            </div>
+
+            <div class="subject-item">
+                5. Subject 5
+            </div>
+
+            <div class="subject-item">
+                6. Subject 6
+            </div>
+
+            <div class="subject-item">
+                7. Subject 7
+            </div>
+
+            <div class="subject-item">
+                8. Subject 8
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        Automatic Bell System • ESP32
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
